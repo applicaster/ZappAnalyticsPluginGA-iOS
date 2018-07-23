@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1279FF990F79888609C84683 /* Pods_ZappAnalyticsPluginGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */; };
+		ED15658048DA77F716455139 /* Pods_ZappAnalyticsPluginGATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C732668215D94F03647A1E /* Pods_ZappAnalyticsPluginGATests.framework */; };
+		FABA9E1D2104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABA9E132104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework */; };
+		FABA9E222104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA9E212104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift */; };
+		FABA9E242104FA3000AB6C07 /* ZappAnalyticsPluginGA.h in Headers */ = {isa = PBXBuildFile; fileRef = FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FABA9F282105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FABA9F292105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */; };
+		FABA9F2A2105C41500AB6C07 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA9F272105C41500AB6C07 /* dummy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FABA9E1E2104FA3000AB6C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FABA9E0A2104FA3000AB6C07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABA9E122104FA3000AB6C07;
+			remoteInfo = ZappAnalyticsPluginGA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C732668215D94F03647A1E /* Pods_ZappAnalyticsPluginGATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A18B1FA3A0E0B797F824B4 /* Pods-ZappAnalyticsPluginGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA/Pods-ZappAnalyticsPluginGA.debug.xcconfig"; sourceTree = "<group>"; };
+		98A4547A7F9F98D6ED998DA6 /* Pods-ZappAnalyticsPluginGA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA/Pods-ZappAnalyticsPluginGA.release.xcconfig"; sourceTree = "<group>"; };
+		9AA7AC77AC4C1A9F09C0E2F4 /* Pods-ZappAnalyticsPluginGATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGATests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE802AAC804F05E5F1118985 /* Pods-ZappAnalyticsPluginGATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGATests.release.xcconfig"; sourceTree = "<group>"; };
+		FABA9E132104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappAnalyticsPluginGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZappAnalyticsPluginGA.h; sourceTree = "<group>"; };
+		FABA9E172104FA3000AB6C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABA9E1C2104FA3000AB6C07 /* ZappAnalyticsPluginGATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappAnalyticsPluginGATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA9E212104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZappAnalyticsPluginGATests.swift; sourceTree = "<group>"; };
+		FABA9E232104FA3000AB6C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnalyticsProviderGoogleAnalytics.h; sourceTree = "<group>"; };
+		FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnalyticsProviderGoogleAnalytics.m; sourceTree = "<group>"; };
+		FABA9F272105C41500AB6C07 /* dummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FABA9E0F2104FA3000AB6C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1279FF990F79888609C84683 /* Pods_ZappAnalyticsPluginGA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABA9E192104FA3000AB6C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA9E1D2104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework in Frameworks */,
+				ED15658048DA77F716455139 /* Pods_ZappAnalyticsPluginGATests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5BD51B4D282A4024367CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */,
+				84C732668215D94F03647A1E /* Pods_ZappAnalyticsPluginGATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBA5A26A6219920A8E0ED7EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A18B1FA3A0E0B797F824B4 /* Pods-ZappAnalyticsPluginGA.debug.xcconfig */,
+				98A4547A7F9F98D6ED998DA6 /* Pods-ZappAnalyticsPluginGA.release.xcconfig */,
+				9AA7AC77AC4C1A9F09C0E2F4 /* Pods-ZappAnalyticsPluginGATests.debug.xcconfig */,
+				BE802AAC804F05E5F1118985 /* Pods-ZappAnalyticsPluginGATests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FABA9E092104FA3000AB6C07 = {
+			isa = PBXGroup;
+			children = (
+				FABA9E152104FA3000AB6C07 /* ZappAnalyticsPluginGA */,
+				FABA9E202104FA3000AB6C07 /* ZappAnalyticsPluginGATests */,
+				FABA9E142104FA3000AB6C07 /* Products */,
+				EBA5A26A6219920A8E0ED7EE /* Pods */,
+				2A5BD51B4D282A4024367CE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FABA9E142104FA3000AB6C07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FABA9E132104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework */,
+				FABA9E1C2104FA3000AB6C07 /* ZappAnalyticsPluginGATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABA9E152104FA3000AB6C07 /* ZappAnalyticsPluginGA */ = {
+			isa = PBXGroup;
+			children = (
+				FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */,
+				FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */,
+				FABA9F272105C41500AB6C07 /* dummy.swift */,
+				FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */,
+				FABA9E172104FA3000AB6C07 /* Info.plist */,
+			);
+			path = ZappAnalyticsPluginGA;
+			sourceTree = "<group>";
+		};
+		FABA9E202104FA3000AB6C07 /* ZappAnalyticsPluginGATests */ = {
+			isa = PBXGroup;
+			children = (
+				FABA9E212104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift */,
+				FABA9E232104FA3000AB6C07 /* Info.plist */,
+			);
+			path = ZappAnalyticsPluginGATests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FABA9E102104FA3000AB6C07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA9E242104FA3000AB6C07 /* ZappAnalyticsPluginGA.h in Headers */,
+				FABA9F282105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FABA9E122104FA3000AB6C07 /* ZappAnalyticsPluginGA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABA9E272104FA3000AB6C07 /* Build configuration list for PBXNativeTarget "ZappAnalyticsPluginGA" */;
+			buildPhases = (
+				80FC0ABBC6BEF79E91503991 /* [CP] Check Pods Manifest.lock */,
+				FABA9E0E2104FA3000AB6C07 /* Sources */,
+				FABA9E0F2104FA3000AB6C07 /* Frameworks */,
+				FABA9E102104FA3000AB6C07 /* Headers */,
+				FABA9E112104FA3000AB6C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZappAnalyticsPluginGA;
+			productName = ZappAnalyticsPluginGA;
+			productReference = FABA9E132104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FABA9E1B2104FA3000AB6C07 /* ZappAnalyticsPluginGATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABA9E2A2104FA3000AB6C07 /* Build configuration list for PBXNativeTarget "ZappAnalyticsPluginGATests" */;
+			buildPhases = (
+				9F63DD1AF91516AFA9D2A27D /* [CP] Check Pods Manifest.lock */,
+				FABA9E182104FA3000AB6C07 /* Sources */,
+				FABA9E192104FA3000AB6C07 /* Frameworks */,
+				FABA9E1A2104FA3000AB6C07 /* Resources */,
+				5178A9F43A5CA5799B3EBC21 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FABA9E1F2104FA3000AB6C07 /* PBXTargetDependency */,
+			);
+			name = ZappAnalyticsPluginGATests;
+			productName = ZappAnalyticsPluginGATests;
+			productReference = FABA9E1C2104FA3000AB6C07 /* ZappAnalyticsPluginGATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FABA9E0A2104FA3000AB6C07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Applicaster;
+				TargetAttributes = {
+					FABA9E122104FA3000AB6C07 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					FABA9E1B2104FA3000AB6C07 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FABA9E0D2104FA3000AB6C07 /* Build configuration list for PBXProject "ZappAnalyticsPluginGA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FABA9E092104FA3000AB6C07;
+			productRefGroup = FABA9E142104FA3000AB6C07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FABA9E122104FA3000AB6C07 /* ZappAnalyticsPluginGA */,
+				FABA9E1B2104FA3000AB6C07 /* ZappAnalyticsPluginGATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FABA9E112104FA3000AB6C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABA9E1A2104FA3000AB6C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5178A9F43A5CA5799B3EBC21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGATests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+				"${BUILT_PRODUCTS_DIR}/ZappPlugins/ZappPlugins.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappPlugins.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FC0ABBC6BEF79E91503991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZappAnalyticsPluginGA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F63DD1AF91516AFA9D2A27D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZappAnalyticsPluginGATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FABA9E0E2104FA3000AB6C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA9F2A2105C41500AB6C07 /* dummy.swift in Sources */,
+				FABA9F292105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABA9E182104FA3000AB6C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA9E222104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FABA9E1F2104FA3000AB6C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FABA9E122104FA3000AB6C07 /* ZappAnalyticsPluginGA */;
+			targetProxy = FABA9E1E2104FA3000AB6C07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FABA9E252104FA3000AB6C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FABA9E262104FA3000AB6C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FABA9E282104FA3000AB6C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A18B1FA3A0E0B797F824B4 /* Pods-ZappAnalyticsPluginGA.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZappAnalyticsPluginGA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAnalyticsPluginGA;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FABA9E292104FA3000AB6C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A4547A7F9F98D6ED998DA6 /* Pods-ZappAnalyticsPluginGA.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZappAnalyticsPluginGA/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAnalyticsPluginGA;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FABA9E2B2104FA3000AB6C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA7AC77AC4C1A9F09C0E2F4 /* Pods-ZappAnalyticsPluginGATests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZappAnalyticsPluginGATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAnalyticsPluginGATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FABA9E2C2104FA3000AB6C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE802AAC804F05E5F1118985 /* Pods-ZappAnalyticsPluginGATests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZappAnalyticsPluginGATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAnalyticsPluginGATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FABA9E0D2104FA3000AB6C07 /* Build configuration list for PBXProject "ZappAnalyticsPluginGA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABA9E252104FA3000AB6C07 /* Debug */,
+				FABA9E262104FA3000AB6C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABA9E272104FA3000AB6C07 /* Build configuration list for PBXNativeTarget "ZappAnalyticsPluginGA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABA9E282104FA3000AB6C07 /* Debug */,
+				FABA9E292104FA3000AB6C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABA9E2A2104FA3000AB6C07 /* Build configuration list for PBXNativeTarget "ZappAnalyticsPluginGATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABA9E2B2104FA3000AB6C07 /* Debug */,
+				FABA9E2C2104FA3000AB6C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FABA9E0A2104FA3000AB6C07 /* Project object */;
+}
