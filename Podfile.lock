@@ -26,10 +26,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZappAnalyticsPluginsSDK:
-    :commit: 5d508421895361808b1c8ea4fb99590dbdcae4e0
+    :commit: b1e6e47038959334103a83b81342fd1bf2b9e8b9
     :git: "git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git"
   ZappPlugins:
-    :commit: 349c733fe4f2841f2a5a9d041b1a0903396738a0
+    :commit: b6f3dff77a744e0095e85f3dd269f5290eafbbb3
     :git: "git@github.com:applicaster/ZappPlugins-iOS.git"
 
 SPEC CHECKSUMS:
@@ -38,6 +38,6 @@ SPEC CHECKSUMS:
   ZappAnalyticsPluginsSDK: 7e0bf5623951348c66f7215408fe8d003686b2d3
   ZappPlugins: f647991e4ec139a8dcd6c6fe9061ad65dc24ccb2
 
-PODFILE CHECKSUM: d3ff130e6d124ab211583aadc0649314e7355782
+PODFILE CHECKSUM: 74fcb48ef41f8b2dd4f6b4946ccca9ec59731889
 
 COCOAPODS: 1.5.3

@@ -18,7 +18,6 @@ target 'ZappAnalyticsPluginGA' do
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
-    inherit! :search_paths
     # Pods for testing
   end
 end
