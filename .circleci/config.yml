@@ -14,7 +14,7 @@ jobs:
       - PROJECT_NAME: "ZappAnalyticsPluginGA"
       - SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS"
       - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
-      - DEPLOY_VERSION: "0.0.33"
+      - DEPLOY_VERSION: "0.2.0"
       - DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySinglePlugin.sh"
     working_directory: ~/ZappAnalyticsPluginGA-iOS
 
@@ -121,7 +121,7 @@ jobs:
             if [ "$CIRCLE_BRANCH" = "master" ];
             then
               echo "Execute deploy script"
-              #$DEPLOY_COMMAND $PROJECT_NAME
+              $DEPLOY_COMMAND $PROJECT_NAME
             else
               echo "Branch is not master, deploy process will be skipped"
             fi

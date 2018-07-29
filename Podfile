@@ -8,13 +8,8 @@ target 'ZappAnalyticsPluginGA' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  ######## REMOVE THIS #######
-  pod 'ZappPlugins', :git => 'git@github.com:applicaster/ZappPlugins-iOS.git', :branch => 'plugins_split'
-  ######## REMOVE THIS #######
-
   # Pods for ZappAnalyticsPluginChartbeat
-  #pod 'ZappPlugins'
-  pod 'ZappAnalyticsPluginsSDK', :git => 'git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git', :branch => 'master'
+  pod 'ZappAnalyticsPluginsSDK', '~> 5.0.0'
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
