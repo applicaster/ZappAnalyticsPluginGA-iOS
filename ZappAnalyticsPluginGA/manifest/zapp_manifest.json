@@ -2,8 +2,7 @@
   "api": {
     "class_name": "APAnalyticsProviderGoogleAnalytics",
     "modules": [
-      "ZappAnalyticsPluginGA",
-      "ZappAnalyticsPlugins"
+      "ZappAnalyticsPluginGA"
     ]
   },
   "dependency_repository_url": [
@@ -14,16 +13,16 @@
   ],
   "author_name": "Alex Zchut",
   "author_email": "a.zchut@applicaster.com",
-  "manifest_version": "4.0.0",
+  "manifest_version": "5.0.0",
   "name": "Google Analytics",
   "description": "provide Google Analytics as agent",
   "identifier": "google_analytics_ios",
   "type": "analytics",
   "platform": "ios",
   "ui_builder_support": true,
-  "min_zapp_sdk": "7.0.0-Dev",
-  "dependency_name": "ZappAnalyticsPlugins/GoogleAnalytics",
-  "dependency_version": "4.0.0",
+  "min_zapp_sdk": "7.0.1-Dev",
+  "dependency_name": "ZappAnalyticsPluginGA",
+  "dependency_version": "5.0.0",
   "react_native": false,
   "custom_configuration_fields": [
     {
