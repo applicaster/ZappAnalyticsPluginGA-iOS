@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.public_header_files = '**/*.h'
-  s.source_files = '**/*.{h,m,swift}'
+  s.source_files = '__framework_name__/**/*.{h,m,swift}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
   s.libraries = 'sqlite3.0', 'z'

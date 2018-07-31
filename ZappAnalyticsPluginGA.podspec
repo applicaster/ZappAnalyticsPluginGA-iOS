@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.public_header_files = '**/*.h'
-  s.source_files = '**/*.{h,m,swift}'
+  s.source_files = 'ZappAnalyticsPluginGA/**/*.{h,m,swift}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
   s.libraries = 'sqlite3.0', 'z'
