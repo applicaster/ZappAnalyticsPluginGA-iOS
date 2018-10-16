@@ -9,10 +9,22 @@ target 'ZappAnalyticsPluginGA' do
   use_frameworks!
 
   # Pods for ZappAnalyticsPluginChartbeat
-  pod 'ZappAnalyticsPluginsSDK', '~> 5.0.0'
+  pod 'ZappAnalyticsPluginsSDK', '~> 6.0.0'
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
     # Pods for testing
   end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            # This works around a unit test issue introduced in Xcode 10.
+            # We only apply it to the Debug configuration to avoid bloating the app size
+            if config.name == "Debug" && defined?(target.product_type) && target.product_type == "com.apple.product-type.framework"
+                config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = "YES"
+            end
+        end
+    end
 end

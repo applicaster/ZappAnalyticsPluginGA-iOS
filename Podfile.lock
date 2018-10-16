@@ -1,43 +1,30 @@
 PODS:
   - GoogleAnalytics (3.17.0)
-  - Toaster (2.1.1)
-  - ZappAnalyticsPluginsSDK (5.0.0):
+  - Toaster (2.2.0.0)
+  - ZappAnalyticsPluginsSDK (6.0.0):
     - Toaster
     - ZappPlugins
-  - ZappPlugins (6.0.0)
+  - ZappPlugins (7.0.1)
 
 DEPENDENCIES:
   - GoogleAnalytics (~> 3.17.0)
-  - "ZappAnalyticsPluginsSDK (from `git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git`, branch `master`)"
-  - "ZappPlugins (from `git@github.com:applicaster/ZappPlugins-iOS.git`, branch `plugins_split`)"
+  - ZappAnalyticsPluginsSDK (~> 6.0.0)
 
 SPEC REPOS:
+  "git@github.com:applicaster/CocoaPods-Private.git":
+    - ZappAnalyticsPluginsSDK
+  "git@github.com:applicaster/CocoaPods.git":
+    - Toaster
+    - ZappPlugins
   https://github.com/cocoapods/specs.git:
     - GoogleAnalytics
-    - Toaster
-
-EXTERNAL SOURCES:
-  ZappAnalyticsPluginsSDK:
-    :branch: master
-    :git: "git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git"
-  ZappPlugins:
-    :branch: plugins_split
-    :git: "git@github.com:applicaster/ZappPlugins-iOS.git"
-
-CHECKOUT OPTIONS:
-  ZappAnalyticsPluginsSDK:
-    :commit: b1e6e47038959334103a83b81342fd1bf2b9e8b9
-    :git: "git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git"
-  ZappPlugins:
-    :commit: b6f3dff77a744e0095e85f3dd269f5290eafbbb3
-    :git: "git@github.com:applicaster/ZappPlugins-iOS.git"
 
 SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
-  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
-  ZappAnalyticsPluginsSDK: 7e0bf5623951348c66f7215408fe8d003686b2d3
-  ZappPlugins: f647991e4ec139a8dcd6c6fe9061ad65dc24ccb2
+  Toaster: c06c2bb68c93d6017780220d5d76dc6ffdd14688
+  ZappAnalyticsPluginsSDK: 1af2db8a8c2ef2cb15d3942f2ea8aefea97b2b3f
+  ZappPlugins: edf7580a4ac7c26df1e0c70a5c3552aa08d56695
 
-PODFILE CHECKSUM: 74fcb48ef41f8b2dd4f6b4946ccca9ec59731889
+PODFILE CHECKSUM: c314c403e903eda35d05f22cc13fe5f1713328f2
 
 COCOAPODS: 1.5.3

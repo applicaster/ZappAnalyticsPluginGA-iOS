@@ -8,13 +8,13 @@ jobs:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "9.4.0"
+      xcode: "10.0.0"
     shell: /bin/bash --login -eo pipefail
     environment:
       - PROJECT_NAME: "ZappAnalyticsPluginGA"
       - SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS"
       - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
-      - DEPLOY_VERSION: "0.2.0"
+      - DEPLOY_VERSION: "0.4.0"
       - DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySinglePlugin.sh"
     working_directory: ~/ZappAnalyticsPluginGA-iOS
 
@@ -81,7 +81,7 @@ jobs:
       # Restore Cocoapods cache, save cache on lower level, after pod update
       - restore_cache:
           name: CocoaPods - restore cache
-          key: Zapp-ZappAnalyticsPluginGA-CocoaPods-1
+          key: Zapp-ZappAnalyticsPluginGA-CocoaPods-2
 
       - run:
           name: CocoaPods - version
@@ -103,7 +103,7 @@ jobs:
       # Cache CocoaPods
       - save_cache:
           name: CocoaPods - save cache
-          key: Zapp-ZappAnalyticsPluginGA-CocoaPods-1
+          key: Zapp-ZappAnalyticsPluginGA-CocoaPods-2
           paths:
             - "~/.cocoapods"
             - "Pods"
