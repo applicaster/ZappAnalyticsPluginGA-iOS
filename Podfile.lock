@@ -1,10 +1,10 @@
 PODS:
   - GoogleAnalytics (3.17.0)
   - Toaster (2.2.0.0)
-  - ZappAnalyticsPluginsSDK (6.0.0):
+  - ZappAnalyticsPluginsSDK (6.0.2):
     - Toaster
     - ZappPlugins
-  - ZappPlugins (7.0.1)
+  - ZappPlugins (7.1.7)
 
 DEPENDENCIES:
   - GoogleAnalytics (~> 3.17.0)
@@ -22,8 +22,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   Toaster: c06c2bb68c93d6017780220d5d76dc6ffdd14688
-  ZappAnalyticsPluginsSDK: 1af2db8a8c2ef2cb15d3942f2ea8aefea97b2b3f
-  ZappPlugins: edf7580a4ac7c26df1e0c70a5c3552aa08d56695
+  ZappAnalyticsPluginsSDK: 554af27bf5cb4f92685640a0d5ec6e56519b1c3d
+  ZappPlugins: 752c97df5771c5836fde71957c210af457239170
 
 PODFILE CHECKSUM: c314c403e903eda35d05f22cc13fe5f1713328f2
 
