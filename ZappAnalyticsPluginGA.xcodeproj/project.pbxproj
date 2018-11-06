@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1279FF990F79888609C84683 /* Pods_ZappAnalyticsPluginGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */; };
+		71A569AD217DBBDE00D32DC3 /* GAProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A569AC217DBBDE00D32DC3 /* GAProvider.swift */; };
 		F43B6D36EDC9A8A251E4B3BD /* Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEC081BE13694EA16390F9A /* Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework */; };
 		FABA9E1D2104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABA9E132104FA3000AB6C07 /* ZappAnalyticsPluginGA.framework */; };
 		FABA9E222104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA9E212104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift */; };
 		FABA9E242104FA3000AB6C07 /* ZappAnalyticsPluginGA.h in Headers */ = {isa = PBXBuildFile; fileRef = FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FABA9F282105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FABA9F292105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */; };
 		FABA9F2A2105C41500AB6C07 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA9F272105C41500AB6C07 /* dummy.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +29,8 @@
 /* Begin PBXFileReference section */
 		0EEC081BE13694EA16390F9A /* Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A569AC217DBBDE00D32DC3 /* GAProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAProvider.swift; sourceTree = "<group>"; };
+		71A569B3217DD6A400D32DC3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = module/module.modulemap; sourceTree = "<group>"; };
 		84C732668215D94F03647A1E /* Pods_ZappAnalyticsPluginGATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A18B1FA3A0E0B797F824B4 /* Pods-ZappAnalyticsPluginGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA/Pods-ZappAnalyticsPluginGA.debug.xcconfig"; sourceTree = "<group>"; };
 		8B76F668ACD8667EC923639E /* Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,8 +44,6 @@
 		FABA9E1C2104FA3000AB6C07 /* ZappAnalyticsPluginGATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappAnalyticsPluginGATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA9E212104FA3000AB6C07 /* ZappAnalyticsPluginGATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZappAnalyticsPluginGATests.swift; sourceTree = "<group>"; };
 		FABA9E232104FA3000AB6C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnalyticsProviderGoogleAnalytics.h; sourceTree = "<group>"; };
-		FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAnalyticsProviderGoogleAnalytics.m; sourceTree = "<group>"; };
 		FABA9F272105C41500AB6C07 /* dummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,11 +114,11 @@
 		FABA9E152104FA3000AB6C07 /* ZappAnalyticsPluginGA */ = {
 			isa = PBXGroup;
 			children = (
-				FABA9F252105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h */,
-				FABA9F262105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m */,
+				71A569AC217DBBDE00D32DC3 /* GAProvider.swift */,
 				FABA9F272105C41500AB6C07 /* dummy.swift */,
 				FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */,
 				FABA9E172104FA3000AB6C07 /* Info.plist */,
+				71A569B3217DD6A400D32DC3 /* module.modulemap */,
 			);
 			path = ZappAnalyticsPluginGA;
 			sourceTree = "<group>";
@@ -141,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABA9E242104FA3000AB6C07 /* ZappAnalyticsPluginGA.h in Headers */,
-				FABA9F282105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABA9F2A2105C41500AB6C07 /* dummy.swift in Sources */,
-				FABA9F292105C41500AB6C07 /* APAnalyticsProviderGoogleAnalytics.m in Sources */,
+				71A569AD217DBBDE00D32DC3 /* GAProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +475,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/ZappAnalyticsPluginGA/module\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -506,6 +505,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/ZappAnalyticsPluginGA/module\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
