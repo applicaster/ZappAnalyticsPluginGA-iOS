@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version = '6.1.0'
+  s.version = '6.1.2'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     'OTHER_LDFLAGS' => '$(inherited) -l"GoogleAnalytics"',
     'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
     'ENABLE_BITCODE' => 'YES',
-    'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module',
+    'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module-dev',
     'SWIFT_VERSION' => '4.2'
   } 
   

@@ -1,7 +1,7 @@
 module GoogleAnalyticsSwift {
-    header "../../Pods/Headers/Public/GoogleAnalytics/GAI.h"
-    header "../../Pods/Headers/Public/GoogleAnalytics/GAIFields.h"
-    header "../../Pods/Headers/Public/GoogleAnalytics/GAIDictionaryBuilder.h"
+    header "../../../Headers/Public/GoogleAnalytics/GAI.h"
+    header "../../../Headers/Public/GoogleAnalytics/GAIFields.h"
+    header "../../../Headers/Public/GoogleAnalytics/GAIDictionaryBuilder.h"
     
     export *
 }

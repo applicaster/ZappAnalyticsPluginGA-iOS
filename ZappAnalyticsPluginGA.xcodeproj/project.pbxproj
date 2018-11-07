@@ -30,7 +30,6 @@
 		0EEC081BE13694EA16390F9A /* Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGA_ZappAnalyticsPluginGATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED2D8BFA1B478CB269A9E9E /* Pods_ZappAnalyticsPluginGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A569AC217DBBDE00D32DC3 /* GAProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAProvider.swift; sourceTree = "<group>"; };
-		71A569B3217DD6A400D32DC3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = module/module.modulemap; sourceTree = "<group>"; };
 		84C732668215D94F03647A1E /* Pods_ZappAnalyticsPluginGATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAnalyticsPluginGATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A18B1FA3A0E0B797F824B4 /* Pods-ZappAnalyticsPluginGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA/Pods-ZappAnalyticsPluginGA.debug.xcconfig"; sourceTree = "<group>"; };
 		8B76F668ACD8667EC923639E /* Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests/Pods-ZappAnalyticsPluginGA-ZappAnalyticsPluginGATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +117,6 @@
 				FABA9F272105C41500AB6C07 /* dummy.swift */,
 				FABA9E162104FA3000AB6C07 /* ZappAnalyticsPluginGA.h */,
 				FABA9E172104FA3000AB6C07 /* Info.plist */,
-				71A569B3217DD6A400D32DC3 /* module.modulemap */,
 			);
 			path = ZappAnalyticsPluginGA;
 			sourceTree = "<group>";
@@ -475,7 +473,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/ZappAnalyticsPluginGA/module\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,7 +502,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/ZappAnalyticsPluginGA/module\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

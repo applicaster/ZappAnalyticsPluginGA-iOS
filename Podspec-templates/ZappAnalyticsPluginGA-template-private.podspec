@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.public_header_files = '**/*.h'
-  s.source_files = '__framework_name__/**/*.{h,m,swift}'
+  s.source_files = '__framework_name__/**/*.{h,m,swift,modulemap}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
   s.libraries = 'sqlite3.0', 'z'
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
                     'OTHER_LDFLAGS' => '$(inherited) -l"GoogleAnalytics"',
                     'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
                     'ENABLE_BITCODE' => 'YES',
+                    'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module',
                     'SWIFT_VERSION' => '__swift_version__'
               }
 

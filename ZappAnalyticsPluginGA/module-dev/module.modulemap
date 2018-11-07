@@ -1,0 +1,7 @@
+module GoogleAnalyticsSwift {
+    header "GAI.h"
+    header "GAIFields.h"
+    header "GAIDictionaryBuilder.h"
+    
+    export *
+}
