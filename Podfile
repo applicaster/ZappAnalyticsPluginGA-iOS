@@ -28,5 +28,6 @@ post_install do |installer|
         end
     end
 
-    system("cp ZappAnalyticsPluginGA/module-ci/module.modulemap Pods/Headers/Public/GoogleAnalytics/module.modulemap")
+    system('rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"')
+    system('cp "ZappAnalyticsPluginGA/module-ci/module.modulemap" "Pods/Headers/Public/GoogleAnalytics/module.modulemap"')
 end

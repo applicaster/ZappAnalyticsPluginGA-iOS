@@ -41,6 +41,9 @@ Pod::Spec.new do |s|
 
   s.script_phase = {
     :name => 'Copy modulemap',
-    :script => 'cp "${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"',
+    :script =>  <<~SCRIPT,
+                  rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
+                  cp "${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
+                SCRIPT
     :execution_position => :before_compile }
 end
