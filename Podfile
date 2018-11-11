@@ -28,5 +28,5 @@ post_install do |installer|
         end
     end
 
-    system("cp ZappAnalyticsPluginGA/module-dev/module.modulemap Pods/Headers/Public/GoogleAnalytics/module.modulemap")
+    system("cp ZappAnalyticsPluginGA/module-ci/module.modulemap Pods/Headers/Public/GoogleAnalytics/module.modulemap")
 end

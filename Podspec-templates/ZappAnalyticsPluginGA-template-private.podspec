@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.public_header_files = '**/*.h'
-  s.source_files = '__framework_name__/**/*.{h,m,swift}', '__framework_name__/module/module.modulemap'
+  s.source_files = '__framework_name__/**/*.{h,m,swift}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
   s.libraries = 'sqlite3.0', 'z'
@@ -27,10 +27,14 @@ Pod::Spec.new do |s|
                     'OTHER_LDFLAGS' => '$(inherited) -l"GoogleAnalytics"',
                     'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
                     'ENABLE_BITCODE' => 'YES',
-                    'SWIFT_INCLUDE_PATHS' => '${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module',
                     'SWIFT_VERSION' => '__swift_version__'
               }
 
   s.dependency 'ZappAnalyticsPluginsSDK'
   s.dependency 'GoogleAnalytics', '~> 3.17.0'
+
+  s.script_phase = {
+    :name => 'Copy modulemap',
+    :script => 'cp "${PODS_TARGET_SRCROOT}/__framework_name__/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"',
+    :execution_position => :before_compile }
 end
