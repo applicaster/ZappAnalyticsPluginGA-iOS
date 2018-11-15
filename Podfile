@@ -9,10 +9,16 @@ target 'ZappAnalyticsPluginGA' do
   use_frameworks!
 
   # Pods for ZappAnalyticsPluginChartbeat
+  pod 'ZappPlugins', '~> 6.0.12'
   pod 'ZappAnalyticsPluginsSDK', '~> 5.0.0'
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
     # Pods for testing
   end
+end
+
+post_install do |installer|
+    system('rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"')
+    system('cp "ZappAnalyticsPluginGA/module-ci/module.modulemap" "Pods/Headers/Public/GoogleAnalytics/module.modulemap"')
 end

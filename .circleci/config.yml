@@ -118,7 +118,7 @@ jobs:
       - deploy:
           name: Creating Closed SDK version
           command: |
-            if [ "$CIRCLE_BRANCH" = "master" ];
+            if [ "$CIRCLE_BRANCH" = "master" ] || [[ "$CIRCLE_BRANCH" == "hotfix_"* ]];
             then
               echo "Execute deploy script"
               $DEPLOY_COMMAND $PROJECT_NAME
