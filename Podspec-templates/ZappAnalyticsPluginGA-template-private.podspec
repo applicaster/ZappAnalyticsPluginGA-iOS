@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = '**/*.h'
   
-  s.source_files = '__framework_name__/**/*.{h,m,swift}', '__framework_name__/module-ci/module.modulemap'
+  s.source_files = '__framework_name__/**/*.{h,m,swift}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
   s.libraries = 'sqlite3.0', 'z'
@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
                 "**/*.storyboard",
                 "**/*.xib",
                 "**/*.png"]
+
+  s.preserve_paths = ['__framework_name__/module-ci/module.modulemap']
 
   s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                     'OTHER_LDFLAGS' => '$(inherited) -l"GoogleAnalytics"',
