@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version = '6.1.6'
+  s.version = '6.1.7'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
     "**/*.png"
   ]
 
+  s.preserve_paths = ['ZappAnalyticsPluginGA/module-ci/module.modulemap']
 
   s.xcconfig =  {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
