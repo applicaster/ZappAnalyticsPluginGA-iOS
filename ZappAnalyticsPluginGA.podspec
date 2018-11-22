@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version = '5.1.1'
+  s.version = '5.1.2'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'YES'
   } 
   
-  s.dependency 'ZappAnalyticsPluginsSDK'
+  s.dependency 'ZappAnalyticsPluginsSDK', '~> 5.0.0'
   s.dependency 'GoogleAnalytics', '~> 3.17.0'
 
   s.script_phase = {

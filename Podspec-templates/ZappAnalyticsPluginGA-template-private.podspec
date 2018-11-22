@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
                     'SWIFT_VERSION' => '__swift_version__'
               }
 
-  s.dependency 'ZappAnalyticsPluginsSDK'
+  s.dependency 'ZappAnalyticsPluginsSDK', '~> 5.0.0'
   s.dependency 'GoogleAnalytics', '~> 3.17.0'
 
   s.script_phase = {
