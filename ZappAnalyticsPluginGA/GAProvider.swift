@@ -244,7 +244,11 @@ public typealias GAProviderParams = [String: NSObject]
         return result
     }
     
-    fileprivate func add(_ convertedCustomDimensions: GAProviderParams, toTracker tracker: GAITracker) {
+    fileprivate func add(_ convertedCustomDimensions: GAProviderParams, toTracker tracker: Any) {
+        guard let tracker = tracker as? GAITracker else {
+            return
+        }
+        
         for (name, value) in convertedCustomDimensions {
             if let value = value as? String {
                 tracker.set(name, value: value)
@@ -252,7 +256,11 @@ public typealias GAProviderParams = [String: NSObject]
         }
     }
     
-    fileprivate func remove(_ convertedCustomDimensions: GAProviderParams, fromTracker tracker: GAITracker) {
+    fileprivate func remove(_ convertedCustomDimensions: GAProviderParams, fromTracker tracker: Any) {
+        guard let tracker = tracker as? GAITracker else {
+            return
+        }
+
         for name in convertedCustomDimensions.keys {
             tracker.set(name, value: nil)
         }
