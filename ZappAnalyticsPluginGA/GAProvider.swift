@@ -300,4 +300,9 @@ public typealias GAProviderParams = [String: NSObject]
     public func clientId() -> String? {
         return GAI.sharedInstance()?.defaultTracker.get(kGAIClientId)
     }
+    
+    public static func gaiSharedInstance() -> Any? {
+        return GAI.sharedInstance()
+    }
+
 }
