@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version = '6.1.10'
+  s.version = '6.1.11'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -41,11 +41,18 @@ Pod::Spec.new do |s|
   s.ios.dependency 'GoogleAnalytics'
   s.tvos.dependency 'GoogleAnalytics-tvOS'
 
-  s.script_phase = {
+  s.ios.script_phase = {
     :name => 'Copy modulemap',
     :script =>  <<~SCRIPT,
                   rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
                   cp "${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
+                SCRIPT
+    :execution_position => :before_compile }
+  s.tvos.script_phase = {
+    :name => 'Copy modulemap',
+    :script =>  <<~SCRIPT,
+                  rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
+                  cp "${PODS_TARGET_SRCROOT}/ZappAnalyticsPluginGA/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
                 SCRIPT
     :execution_position => :before_compile }
 end
