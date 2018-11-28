@@ -36,4 +36,19 @@ Pod::Spec.new do |s|
   s.ios.dependency 'GoogleAnalytics', '~> 3.17.0'
   s.tvos.dependency 'GoogleAnalytics-tvOS', '~> 3.17.0'
 
+  s.ios.script_phase = {
+    :name => 'Copy modulemap',
+    :script =>  <<~SCRIPT,
+                  rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
+                  cp "${PODS_TARGET_SRCROOT}/__framework_name__/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
+                SCRIPT
+    :execution_position => :before_compile }
+  s.tvos.script_phase = {
+    :name => 'Copy modulemap',
+    :script =>  <<~SCRIPT,
+                  rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
+                  cp "${PODS_TARGET_SRCROOT}/__framework_name__/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
+                SCRIPT
+    :execution_position => :before_compile }
+
 end
