@@ -8,7 +8,7 @@
 import Foundation
 
 import ZappAnalyticsPluginsSDK
-import GoogleAnalyticsSwift
+import GoogleAnalytics_tvOS
 
 public typealias GAProviderParams = [String: NSObject]
 
@@ -34,7 +34,7 @@ public typealias GAProviderParams = [String: NSObject]
     }
     
     public required init(configurationJSON:NSDictionary?) {
-        super.init()
+        super.init(configurationJSON: configurationJSON)
         self.configurationJSON = configurationJSON
     }
     
