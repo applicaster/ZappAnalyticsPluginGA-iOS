@@ -34,7 +34,7 @@ public typealias GAProviderParams = [String: NSObject]
     }
     
     public required init(configurationJSON:NSDictionary?) {
-        super.init()
+        super.init(configurationJSON: configurationJSON)
         self.configurationJSON = configurationJSON
     }
     

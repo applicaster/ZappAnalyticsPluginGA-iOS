@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double ZappAnalyticsPluginGAVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZappAnalyticsPluginGAVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZappAnalyticsPluginGA/PublicHeader.h>
-
-
