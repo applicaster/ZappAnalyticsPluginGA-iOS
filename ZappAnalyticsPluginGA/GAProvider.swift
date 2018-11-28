@@ -8,7 +8,7 @@
 import Foundation
 
 import ZappAnalyticsPluginsSDK
-import GoogleAnalytics_tvOS
+import GoogleAnalyticsSwift
 
 public typealias GAProviderParams = [String: NSObject]
 
