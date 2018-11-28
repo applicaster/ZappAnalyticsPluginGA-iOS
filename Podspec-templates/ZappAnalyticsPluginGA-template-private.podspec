@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name  = "__framework_name__"
   s.version = '__version__'
-  s.platform  = :ios, '__ios_platform_version__'
   s.summary = "__framework_name__"
   s.description = "__framework_name__ container."
   s.homepage  = "https://github.com/applicaster/__framework_name__-iOS"
@@ -10,9 +9,12 @@ Pod::Spec.new do |s|
   s.source  = { :git => "git@github.com:applicaster/__framework_name__-iOS.git", :tag => s.version.to_s }
   s.requires_arc = true
   s.static_framework = true
+  s.platform = :ios, :tvos
+  s.ios.deployment_target = '__ios_platform_version__'
+  s.tvos.deployment_target = "10.0"
 
   s.public_header_files = '**/*.h'
-  
+
   s.source_files = '__framework_name__/**/*.{h,m,swift}'
 
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
@@ -34,7 +36,8 @@ Pod::Spec.new do |s|
               }
 
   s.dependency 'ZappAnalyticsPluginsSDK'
-  s.dependency 'GoogleAnalytics', '~> 3.17.0'
+  s.ios.dependency 'GoogleAnalytics', '~> 3.17.0'
+  s.tvos.dependency 'GoogleAnalytics-tvOS', '~> 3.17.0'
 
   s.script_phase = {
     :name => 'Copy modulemap',
