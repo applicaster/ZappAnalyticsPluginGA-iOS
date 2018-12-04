@@ -193,6 +193,7 @@ public typealias GAProviderParams = [String: NSObject]
             for (index, eventValue) in eventSeparated.prefix(2).enumerated() {
                 eventSeparated[index] = eventValue.trimmingCharacters(in: .whitespaces)
             }
+            result = eventSeparated
         }
 
         return result ?? [String]()
