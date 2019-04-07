@@ -1,14 +1,14 @@
 PODS:
   - GoogleAnalytics (3.17.0)
   - Toaster (2.2.0.0)
-  - ZappAnalyticsPluginsSDK (6.0.2):
+  - ZappAnalyticsPluginsSDK (7.0.0):
     - Toaster
     - ZappPlugins
-  - ZappPlugins (7.1.7)
+  - ZappPlugins (8.0.0)
 
 DEPENDENCIES:
   - GoogleAnalytics (~> 3.17.0)
-  - ZappAnalyticsPluginsSDK (~> 6.0.0)
+  - ZappAnalyticsPluginsSDK (~> 7.0.0)
 
 SPEC REPOS:
   "git@github.com:applicaster/CocoaPods-Private.git":
@@ -21,10 +21,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
-  Toaster: c06c2bb68c93d6017780220d5d76dc6ffdd14688
-  ZappAnalyticsPluginsSDK: 554af27bf5cb4f92685640a0d5ec6e56519b1c3d
-  ZappPlugins: 752c97df5771c5836fde71957c210af457239170
+  Toaster: 7464b87db5bd9453043bd3cf0fc79219cc9803f1
+  ZappAnalyticsPluginsSDK: d298f6c0d8624e3eb6cd372eca56ca78143d722e
+  ZappPlugins: fa02c453fa7d9135d68f4959d48389c8cb9e5465
 
-PODFILE CHECKSUM: 364e313fb0ca6ce9a2235e4fbafcbb894cb31ba5
+PODFILE CHECKSUM: 17710653ba3aa0253301b8172cd8ac5995cb9d7d
 
 COCOAPODS: 1.5.3

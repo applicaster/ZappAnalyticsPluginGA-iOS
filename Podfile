@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '10.0'
 source 'git@github.com:CocoaPods/Specs.git'
 source 'git@github.com:applicaster/CocoaPods.git'
 source 'git@github.com:applicaster/CocoaPods-Private.git'
@@ -9,7 +9,7 @@ target 'ZappAnalyticsPluginGA' do
   use_frameworks!
 
   # Pods for ZappAnalyticsPluginChartbeat
-  pod 'ZappAnalyticsPluginsSDK', '~> 6.0.0'
+  pod 'ZappAnalyticsPluginsSDK', '~> 7.0.0'
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
