@@ -9,7 +9,10 @@ target 'ZappAnalyticsPluginGA' do
   use_frameworks!
 
   # Pods for ZappAnalyticsPluginChartbeat
-  pod 'ZappAnalyticsPluginsSDK', '~> 7.0.0'
+  pod 'ZappPlugins', :git => 'git@github.com:applicaster/ZappPlugins-iOS.git', :branch => 'dev12'
+  pod 'ZappAnalyticsPluginsSDK', :git => 'git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git', :branch => 'dev12'
+  pod 'Toaster', :git => 'https://github.com/devxoul/Toaster.git', :tag => '2.2.0'
+
   pod 'GoogleAnalytics', '~> 3.17.0'
 
   target 'ZappAnalyticsPluginGATests' do
