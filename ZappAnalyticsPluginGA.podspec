@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version = '6.1.13'
+  s.version          = '8.0.0'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "cmps" => "a.zchut@applicaster.com" }
   s.source           = { :git => "git@github.com:applicaster/ZappAnalyticsPluginGA-iOS.git", :tag => s.version.to_s }
   s.platform = :ios, :tvos
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "10.0"
   s.tvos.deployment_target = "10.0"
 
   s.requires_arc = true
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.xcconfig =  {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'ENABLE_BITCODE' => 'YES',
-    'SWIFT_VERSION' => '4.2'
+    'SWIFT_VERSION' => '5.0'
   }
 
   s.dependency 'ZappAnalyticsPluginsSDK'
