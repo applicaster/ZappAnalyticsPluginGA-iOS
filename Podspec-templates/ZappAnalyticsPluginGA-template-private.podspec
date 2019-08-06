@@ -9,9 +9,8 @@ Pod::Spec.new do |s|
   s.source  = { :git => "git@github.com:applicaster/__framework_name__-iOS.git", :tag => s.version.to_s }
   s.requires_arc = true
   s.static_framework = true
-  s.platform = :ios, :tvos
+  s.platform = :ios
   s.ios.deployment_target = '__ios_platform_version__'
-  s.tvos.deployment_target = "10.0"
 
   s.public_header_files = '**/*.h'
 
@@ -37,20 +36,12 @@ Pod::Spec.new do |s|
 
   s.dependency 'ZappAnalyticsPluginsSDK'
   s.ios.dependency 'GoogleAnalytics', '~> 3.17.0'
-  s.tvos.dependency 'GoogleAnalytics-tvOS', '~> 3.17.0'
 
   s.ios.script_phase = {
     :name => 'Copy modulemap',
     :script =>  <<~SCRIPT,
                   rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
                   cp "${PODS_TARGET_SRCROOT}/__framework_name__/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics/module.modulemap"
-                SCRIPT
-    :execution_position => :before_compile }
-  s.tvos.script_phase = {
-    :name => 'Copy modulemap',
-    :script =>  <<~SCRIPT,
-                  rm -f "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
-                  cp "${PODS_TARGET_SRCROOT}/__framework_name__/module-ci/module.modulemap" "${PODS_ROOT}/Headers/Public/GoogleAnalytics-tvOS/module.modulemap"
                 SCRIPT
     :execution_position => :before_compile }
 

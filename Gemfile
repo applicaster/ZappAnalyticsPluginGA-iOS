@@ -2,5 +2,5 @@
 source 'https://rubygems.org'
 
 gem 'xcpretty'
-gem 'cocoapods', '= 1.5.3'
+gem 'cocoapods', '= 1.7.5'
 gem 'fastlane', '= 2.106.2'
