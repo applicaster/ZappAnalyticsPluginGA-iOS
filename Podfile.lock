@@ -1,49 +1,27 @@
 PODS:
   - GoogleAnalytics (3.17.0)
-  - Toaster (2.2.0)
-  - ZappAnalyticsPluginsSDK (8.0.0):
-    - Toaster
+  - ZappAnalyticsPluginsSDK (8.0.4):
     - ZappPlugins
-  - ZappPlugins (9.0.0)
+  - ZappPlugins (9.1.8)
 
 DEPENDENCIES:
   - GoogleAnalytics (~> 3.17.0)
-  - Toaster (from `https://github.com/devxoul/Toaster.git`, tag `2.2.0`)
-  - "ZappAnalyticsPluginsSDK (from `git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git`, branch `dev12`)"
-  - "ZappPlugins (from `git@github.com:applicaster/ZappPlugins-iOS.git`, branch `dev12`)"
+  - ZappAnalyticsPluginsSDK (~> 8.0.4)
+  - ZappPlugins (~> 9.1.8)
 
 SPEC REPOS:
+  "git@github.com:applicaster/CocoaPods-Private.git":
+    - ZappAnalyticsPluginsSDK
+  "git@github.com:applicaster/CocoaPods.git":
+    - ZappPlugins
   https://github.com/cocoapods/specs.git:
     - GoogleAnalytics
 
-EXTERNAL SOURCES:
-  Toaster:
-    :git: https://github.com/devxoul/Toaster.git
-    :tag: 2.2.0
-  ZappAnalyticsPluginsSDK:
-    :branch: dev12
-    :git: "git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git"
-  ZappPlugins:
-    :branch: dev12
-    :git: "git@github.com:applicaster/ZappPlugins-iOS.git"
-
-CHECKOUT OPTIONS:
-  Toaster:
-    :git: https://github.com/devxoul/Toaster.git
-    :tag: 2.2.0
-  ZappAnalyticsPluginsSDK:
-    :commit: 85ff807d47e0935143abdeb594880495236b400a
-    :git: "git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git"
-  ZappPlugins:
-    :commit: 50015fda514fa70e51e73d82876015bd664d30e8
-    :git: "git@github.com:applicaster/ZappPlugins-iOS.git"
-
 SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
-  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
-  ZappAnalyticsPluginsSDK: 6dfd7bab652114ef8563e17eb44fdefd755cbb1d
-  ZappPlugins: 25cb9b4605fe3984eaec8c3258c07b8caf0d9a2d
+  ZappAnalyticsPluginsSDK: 6f8edcddc12ae4001098a3fa6fe87e6fe1a013bd
+  ZappPlugins: 19d19d6fe70d39a4fc5a323e6a9146e0ab629970
 
-PODFILE CHECKSUM: 453deea936205cae2303aa0899b809b1b791dd4f
+PODFILE CHECKSUM: 80777df7bca095a3de22834035c5ef7ba0de4c43
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
