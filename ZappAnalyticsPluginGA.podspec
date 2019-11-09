@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version          = '8.0.1'
+  s.version          = '9.0.0'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.xcconfig =  {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'ENABLE_BITCODE' => 'YES',
-    'SWIFT_VERSION' => '5.0'
+    'SWIFT_VERSION' => '5.1'
   }
 
   s.dependency 'ZappAnalyticsPluginsSDK'
