@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAnalyticsPluginGA"
-  s.version          = '9.0.0'
+  s.version          = '10.0.0'
   s.summary          = "ZappAnalyticsPluginGA"
   s.description      = <<-DESC
                         ZappAnalyticsPluginGA container.

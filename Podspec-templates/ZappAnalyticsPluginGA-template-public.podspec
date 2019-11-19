@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = '__framework_name__.framework'
 
   # base dependency
-  s.dependency 'ZappAnalyticsPluginsSDK','~> 8.0.4'
-  
+  s.dependency 'ZappAnalyticsPluginsSDK','~> 10.0.0'
+
 
   # frameworks
   s.frameworks = 'AdSupport', 'CoreData', 'SystemConfiguration'
