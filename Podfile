@@ -11,8 +11,8 @@ target 'ZappAnalyticsPluginGA' do
   # Pods for ZappAnalyticsPluginChartbeat
   # pod 'ZappPlugins', :git => 'git@github.com:applicaster/ZappPlugins-iOS.git', :branch => 'master'
   # pod 'ZappAnalyticsPluginsSDK', :git => 'git@github.com:applicaster/ZappAnalyticsPluginsSDK-iOS.git', :branch => 'master'
-  pod 'ZappPlugins', '~> 10.0.0'
-  pod 'ZappAnalyticsPluginsSDK', '~> 9.0.0'
+  pod 'ZappPlugins', '~> 11.0.0'
+  pod 'ZappAnalyticsPluginsSDK', '~> 10.0.0'
 
   pod 'GoogleAnalytics', '~> 3.17.0'
 
